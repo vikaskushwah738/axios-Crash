@@ -19,7 +19,7 @@ addTaskButton.addEventListener('click', () =>{
 
     tasks.push(newsTask)
     saveTasks()
-    renderTask(tasks)
+    renderTask(newsTask)
     todoInput.value =""
     console.log(newsTask)
 })
