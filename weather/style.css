@@ -1,0 +1,60 @@
+.hidden{
+    display: none;
+}
+
+body{
+    background: black;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+input {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;       /* Removes the border */
+    outline: none;      /* Removes the focus border (glow) */
+    box-shadow: none;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+button{
+   padding: 7px;
+   border-radius: 5px;
+   border: none;        /* Removes the default border */
+   outline: none;       /* Removes focus outline */
+   box-shadow: none;
+   background-color: rgb(60, 60, 134);
+}
+
+.container{
+    background-color: rgb(118, 118, 190);
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+#weather-info h2,
+#weather-info p {
+  margin: 0;             /* Remove default margin */
+  padding: 0;            /* Optional: remove padding too */
+}
+
+#weather-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
