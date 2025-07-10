@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#question-text {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+ul#choices-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul#choices-list li {
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+#start-btn{
+    margin-top: 5px;
+}
+
+ul#choices-list li:hover {
+  background-color: #e0e0e0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button.hidden {
+  display: none;
+}
+
+#result-container h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+/* Optional: Add animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#question-container,
+#result-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.hedden{
+    display: none;
+}
